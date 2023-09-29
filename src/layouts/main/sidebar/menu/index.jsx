@@ -1,5 +1,6 @@
 import { CustomNavLink } from "../customNavLink";
 import { MainMenu } from "../../../../utils/consts";
+import More from "./more";
 
 export default function Menu() {
   return (
@@ -19,6 +20,7 @@ export default function Menu() {
             />
           );
         })}
+        <More></More>
       </nav>
     </div>
   );

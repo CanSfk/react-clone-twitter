@@ -1,6 +1,6 @@
 import Logo from "./logo";
 import Menu from "./menu";
-import { Link } from "react-router-dom";
+import Button from "../../../components/button";
 
 export default function Sidebar() {
   return (
@@ -10,13 +10,7 @@ export default function Sidebar() {
           <Logo />
           <Menu />
           <div className="my-4 flex items-stretch h-[52px] w-[90%]">
-            <Link className="flex-1 rounded-full px-8 bg-[#1d9bf0] flex items-center justify-center transition-colors hover:bg-[#1a8cd8]">
-              <div className="flex flex-1 items-center justify-center h-full">
-                <span className="text-white font-bold text-[17px] leading-5">
-                  Post
-                </span>
-              </div>
-            </Link>
+            <Button size="large">Post</Button>
           </div>
         </aside>
       </div>
