@@ -96,3 +96,138 @@ export const MainMenu = [
     },
   },
 ];
+
+export const Trends = [
+  {
+    title: "Trending in Turkey",
+    name: "Şanlıurfa",
+    post: "26.5K",
+  },
+  {
+    title: "Politics · Trending",
+    name: "COVID-19",
+    post: "61K",
+  },
+  {
+    title: "Trending in Turkey",
+    name: "#UzmanÇavuş",
+    post: "13.2K",
+  },
+  {
+    title: "Politics · Trending",
+    name: "Ülkemize Çırak Lazım",
+    post: "208K",
+  },
+  {
+    title: "Trending in Turkey",
+    name: "Hayat Eve Sığar",
+    post: "12.2K",
+  },
+  {
+    title: "Trending in Turkey",
+    name: "Ehliyet",
+    post: "1.341K",
+  },
+  {
+    title: "Trending in Turkey",
+    name: "Zaha 11",
+    post: "1.303K",
+  },
+  {
+    title: "Trending in Turkey",
+    name: "#GSvANK",
+    post: "2.475K",
+  },
+  {
+    title: "Trending in Turkey",
+    name: "Aziz Yıldırım",
+    post: "3.612K",
+  },
+  {
+    title: "Entertainment · Trending",
+    name: "Cem Yılmaz",
+    post: "4,585K",
+  },
+];
+
+export const Profiles = [
+  {
+    name: "İlber Ortaylı",
+    longName: "ILBERORTAYLIGSU",
+    avatar:
+      "https://pbs.twimg.com/profile_images/483545268139597824/-y692bMn_normal.jpeg",
+    following: "5",
+    followers: "4.6M",
+    bio: "",
+    coFollowing: "",
+    premium: false,
+  },
+  {
+    name: "Ümit Özdağ",
+    longName: "umitozdag",
+    avatar:
+      "https://pbs.twimg.com/profile_images/1642802069663784961/R0o_riAt_normal.jpg",
+    following: "1,586",
+    followers: "2.6M",
+    bio: "@ZaferPartisi Genel Başkanı Zafer Partisi gelecek, sığınmacılar gidecek! Zafer Partisi'ne üye olmak için http://zaferpartisi.org.tr/online-uyelik",
+    coFollowing: "",
+    premium: false,
+  },
+  {
+    name: "Fenerbahçe SK",
+    longName: "Fenerbahce",
+    avatar:
+      "https://pbs.twimg.com/profile_images/1640331374400774145/c1oF1C6M_normal.jpg",
+    following: "88",
+    followers: "11.2M",
+    bio: "Fenerbahçe Spor Kulübü resmi hesabı. The official account of Fenerbahçe SK. Please follow @Fenerbahce_EN for English. #CumhuriyetinFeneri",
+    coFollowing: "",
+    premium: true,
+  },
+];
+
+export const Footers = [
+  {
+    title: "Terms of Service",
+    to: "/",
+  },
+  {
+    title: "Privacy Policy",
+    to: "/",
+  },
+  {
+    title: "Cookie Policy",
+    to: "/",
+  },
+  {
+    title: "Imprint",
+    to: "/",
+  },
+  {
+    title: "Accessibility",
+    to: "/",
+  },
+  {
+    title: "Ads info",
+    to: "/",
+  },
+];
+
+export const FooterMoreLinks = [
+  {
+    title: "About",
+    to: "/",
+  },
+  {
+    title: "Status",
+    to: "/",
+  },
+  {
+    title: "X for Business",
+    to: "/",
+  },
+  {
+    title: "Developers",
+    to: "/",
+  },
+];

@@ -24,7 +24,10 @@ export default function Search() {
   }, [showPopup]);
 
   return (
-    <div className="w-full h-[53px] mb-3 flex items-center" ref={container}>
+    <div
+      className="w-full h-[53px] mb-3 flex items-center sticky top-0  bg-black z-10"
+      ref={container}
+    >
       <div className="relative w-full" onClick={() => setShowPopup(true)}>
         <label className="text-[#71767b] w-full rounded-full border border-[#202327] bg-[#202327] flex items-center text-[15px] leading-5 group focus-within:border-[#1d9bf0] focus-within:text-[#1d9bf0] focus-within:bg-black">
           <div className="pointer-events-none">
