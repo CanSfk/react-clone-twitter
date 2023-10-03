@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function MoreDisclosurePanel({ to, path, title }) {
   return (
-    <Disclosure.Panel className="flex-1 w-full p-3 transition-colors hover:bg-[#16181c]">
-      <Link to={to} className="flex items-center flex-1">
+    <Disclosure.Panel className="flex-1 w-full transition-colors hover:bg-[#16181c]">
+      <Link to={to} className="flex items-center flex-1 p-3">
         <div className="mr-3">
           <svg
             viewBox="0 0 24 24"

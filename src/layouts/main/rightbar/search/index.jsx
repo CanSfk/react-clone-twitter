@@ -25,7 +25,7 @@ export default function Search() {
 
   return (
     <div
-      className="w-full h-[53px] mb-3 flex items-center sticky top-0  bg-black z-10"
+      className="w-full h-[53px] mb-3 flex items-center sticky top-0 bg-black z-10"
       ref={container}
     >
       <div className="relative w-full" onClick={() => setShowPopup(true)}>
