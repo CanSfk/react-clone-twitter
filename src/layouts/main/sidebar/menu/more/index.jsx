@@ -8,25 +8,25 @@ export default function More() {
   return (
     <Popover className="relative outline-none w-full">
       <Popover.Button className="py-1 flex items-start flex-1 flex-col w-full group outline-none">
-        <div className="flex p-3 rounded-full items-center justify-center group-hover:bg-[#e7e9ea]/10 transition-colors">
-          <div className="relative">
+        <div className="flex p-3 rounded-full items-center justify-center group-hover:bg-[var(--background-secondary)] transition-colors">
+          <div className="relative ">
             <svg
               viewBox="0 0 24 24"
               aria-hidden="true"
               width="26.25"
               height="26.25"
-              fill="#e7e9ea"
+              fill="currentColor"
             >
               <path d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z" />
             </svg>
           </div>
           <div className="mr-4 ml-5 text-ellipsis h-[24px] break-words flex items-center ">
-            <span className="text-xl text-[#e7e9ea] inline ">More</span>
+            <span className="text-xl  inline ">More</span>
           </div>
         </div>
       </Popover.Button>
 
-      <Popover.Panel className="absolute z-10 -top-[214.75px] left-0 rounded-xl w-[318px] bg-black shadow-box">
+      <Popover.Panel className="absolute z-10 -top-[214.75px] left-0 rounded-xl w-[318px] bg-[var(--background-primary)] shadow-box">
         {({ close }) => (
           <>
             <MoreNavLink
@@ -40,9 +40,9 @@ export default function More() {
               text="Monetization"
             />
 
-            <div className="bg-[#2f3336] w-[89%] h-[1px] mx-auto my-0.5"></div>
+            <div className="bg-[var(--background-third)] w-[89%] h-[1px] mx-auto my-0.5"></div>
 
-            <div className="grid leading-5 text-[15px] text-[#e7e9ea]">
+            <div className="grid leading-5 text-[15px] ">
               <Disclosure>
                 <div className="flex-1">
                   <MoreDisclosureButton
@@ -81,7 +81,7 @@ export default function More() {
                     title="Help Center"
                     path="M11.57 11.96l.99-.79c.33-.26.56-.53.7-.8.15-.27.22-.57.22-.91 0-.41-.12-.74-.38-.97s-.62-.35-1.09-.35-.85.12-1.13.37c-.26.25-.4.59-.4 1.03 0 .2.03.42.08.65l-2.07-.15c-.06-.29-.09-.55-.09-.79 0-.84.33-1.51.98-2.01.67-.49 1.55-.74 2.66-.74 1.17 0 2.07.24 2.71.73.63.48.95 1.16.95 2.04 0 .98-.47 1.86-1.4 2.65l-.87.73c-.17.15-.29.28-.36.4-.06.11-.09.26-.09.45v.46h-2.1v-.67c0-.3.06-.55.17-.75.12-.2.29-.39.52-.58zm-.52 5.17c.24.25.56.37.93.37.39 0 .7-.12.94-.37.25-.25.37-.56.37-.94 0-.39-.12-.7-.37-.95-.24-.25-.55-.37-.94-.37-.37 0-.69.12-.93.37s-.36.56-.36.95c0 .38.12.69.36.94zM22.25 12c0 5.66-4.59 10.25-10.25 10.25S1.75 17.66 1.75 12 6.34 1.75 12 1.75 22.25 6.34 22.25 12zM12 20.25c4.56 0 8.25-3.69 8.25-8.25S16.56 3.75 12 3.75 3.75 7.44 3.75 12s3.69 8.25 8.25 8.25z"
                   />
-                  <Display close={close} />
+                  <Display />
                   <MoreDisclosurePanel
                     title="Keyboard shortcuts"
                     path="M11.999 22.25c-5.652 0-10.25-4.598-10.25-10.25S6.347 1.75 11.999 1.75 22.249 6.348 22.249 12s-4.598 10.25-10.25 10.25zm0-18.5c-4.549 0-8.25 3.701-8.25 8.25s3.701 8.25 8.25 8.25 8.25-3.701 8.25-8.25-3.701-8.25-8.25-8.25zm.445 6.992c1.747-.096 3.748-.689 3.768-.695l.575 1.916c-.077.022-1.616.48-3.288.689v.498c.287 1.227 1.687 2.866 2.214 3.405l-1.428 1.4c-.188-.191-1.518-1.576-2.286-3.144-.769 1.568-2.098 2.952-2.286 3.144l-1.428-1.4c.527-.54 1.927-2.178 2.214-3.405v-.498c-1.672-.209-3.211-.667-3.288-.689l.575-1.916c.02.006 2.021.6 3.768.695m0 0c.301.017.59.017.891 0M12 6.25c-.967 0-1.75.78-1.75 1.75s.783 1.75 1.75 1.75 1.75-.78 1.75-1.75-.784-1.75-1.75-1.75z"

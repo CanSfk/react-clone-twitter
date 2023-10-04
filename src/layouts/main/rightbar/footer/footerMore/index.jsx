@@ -30,7 +30,7 @@ export default function FooterMore() {
         <div>
           <span>More</span>
         </div>
-        <div className="text-[#71767b] px-0.5 items-end mt-auto">
+        <div className="text-[var(--color-baseSecondary)] px-0.5 items-end mt-auto">
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
@@ -45,7 +45,7 @@ export default function FooterMore() {
 
       {visible && (
         <div
-          className="absolute bottom-0 right-0 shadow-box bg-black flex flex-col z-20 rounded-xl overflow-hidden"
+          className="absolute bottom-0 right-0 shadow-box bg-[var(--background-primary)] flex flex-col z-20 rounded-xl overflow-hidden"
           ref={moreContainer}
         >
           {FooterMoreLinks.map((footer, index) => {

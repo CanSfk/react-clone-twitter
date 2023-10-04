@@ -47,15 +47,15 @@ export default function FollowButton({ longName }) {
       </button>
       {popup && (
         <div className="fixed top-0 left-0 bottom-0 right-0 grid place-items-center bg-[#5b708366]">
-          <div className="w-[320px] p-8 flex flex-col gap-6 bg-black rounded-2xl">
+          <div className="w-[320px] p-8 flex flex-col gap-6 bg-[var(--background-primary)] rounded-2xl">
             <div className="flex flex-col">
               <div className="mb-2 flex">
-                <h1 className="font-bold text-[20px] text-[#e7e9ea] leading-6">
+                <h1 className="font-bold text-[20px]  leading-6">
                   Unfollow @{longName}?
                 </h1>
               </div>
               <div className="flex">
-                <span className="text-[#71767b] text-[15px] leading-5">
+                <span className="text-[var(--color-baseSecondary)] text-[15px] leading-5">
                   Their posts will no longer show up in your For You timeline.
                   You can still view their profile, unless their posts are
                   protected.

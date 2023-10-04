@@ -11,7 +11,6 @@ export default function Menu() {
             <CustomNavLink
               to={menu.path}
               key={index}
-              fill="#e7e9ea"
               text={menu.title}
               pasifPath={menu.icon.pasive}
               activePath={menu.icon.active}

@@ -5,7 +5,7 @@ export default function AccountPopoverButton() {
   const account = useAccount();
 
   return (
-    <Popover.Button className="p-3 rounded-full flex items-center  hover:bg-[#e7e9ea]/10 w-full transition-colors outline-none">
+    <Popover.Button className="p-3 rounded-full flex items-center  hover:bg-[var(--color-base)]/10 w-full transition-colors outline-none">
       <div className="w-10 h-10 bg-slate-400 rounded-full overflow-hidden">
         <img
           alt="Can"
@@ -15,7 +15,7 @@ export default function AccountPopoverButton() {
       </div>
       <div className="flex flex-col mx-3 justify-between text-left">
         <span className="font-bold h-[22.5px]">{account.userName}</span>
-        <span className="text-[#71767b]">@{account.fullName}</span>
+        <span className="text-[var(--color-baseSecondary)]">@{account.fullName}</span>
       </div>
       <div className="flex flex-col items-end flex-1 pt-px">
         <svg

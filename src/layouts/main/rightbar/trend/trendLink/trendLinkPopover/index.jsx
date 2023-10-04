@@ -4,7 +4,7 @@ export default function TrendLinkPopover() {
   return (
     <Popover className="flex">
       <Popover.Button className="relative bg-white">
-        <div className="absolute top-[2px] right-0 transition-colors text-[#71767b] hover:text-[#209aeb] group">
+        <div className="absolute top-[2px] right-0 transition-colors text-[var(--color-baseSecondary)] hover:text-[#209aeb] group">
           <div className="w-[37.75px] h-[37.75px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full transition-colors group-hover:bg-[#1d9bf0]/10"></div>
           <svg
             viewBox="0 0 24 24"
@@ -18,7 +18,7 @@ export default function TrendLinkPopover() {
         </div>
       </Popover.Button>
       <Popover.Panel>
-        <div className="text-[#e7e9ea] flex flex-col bg-black shadow-box rounded-xl w-max absolute right-0 top-[1px] z-20">
+        <div className=" flex flex-col bg-[var(--background-primary)] shadow-box rounded-xl w-max absolute right-0 top-[1px] z-20">
           <div className="flex flex-1 px-4 py-3 items-center hover:bg-[#ffffff08]">
             <div className="pr-3 flex">
               <svg

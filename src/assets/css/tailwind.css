@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 body {
-    @apply bg-black text-white;
+    @apply bg-[var(--background-primary)] text-white;
+}
+
+.shadow-box {
+    box-shadow: var(--boxShadow-shadow);
 }
 
 @layer components {

@@ -12,7 +12,7 @@ export default function Profile({
   premium,
 }) {
   return (
-    <Link className="px-4 py-3 flex text-[#7595a5] transition-colors hover:bg-[#ffffff08]">
+    <Link className="px-4 py-3 flex text-[#text-[var(--color-base)]] transition-colors hover:bg-[#ffffff08]">
       <div className="relative w-10 h-10 rounded-full overflow-hidden mr-3">
         <img
           className="h-full w-full object-cover absolute"
@@ -23,7 +23,7 @@ export default function Profile({
       <div className="flex justify-between flex-1 items-center">
         <div className="text-[15px] leading-5">
           <div className="flex flex-1 items-center mb-[2.25px]">
-            <span className="text-[#e7e9ea] font-bold hover:decoration-slice">
+            <span className=" font-bold hover:decoration-slice">
               {name}
             </span>
             <div className="ml-0.5">
@@ -40,7 +40,7 @@ export default function Profile({
               </svg>
             </div>
           </div>
-          <span className="text-[#71767b]">@{longName}</span>
+          <span className="text-[var(--color-baseSecondary)]">@{longName}</span>
         </div>
         <div className="ml-3">
           <FollowButton longName={longName} />

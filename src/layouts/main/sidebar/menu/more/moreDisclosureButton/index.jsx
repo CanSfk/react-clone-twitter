@@ -3,14 +3,17 @@ import classNames from "classnames";
 
 export default function MoreDisclosureButton({ title, path }) {
   return (
-    <Disclosure.Button className="p-4 flex items-center justify-between flex-1 w-full transition-colors hover:bg-[#16181c]">
+    <Disclosure.Button className="p-4 flex items-center justify-between flex-1 w-full transition-colors hover:bg-[var(--background-secondary)]">
       {({ open }) => (
         <>
           <span className="font-bold">{title}</span>
           <div
-            className={classNames("ml-3 transition-transform", {
-              "rotate-180": open,
-            })}
+            className={classNames(
+              "ml-3 transition-transform ",
+              {
+                "rotate-180 text-[var(--color-primary)]": open,
+              }
+            )}
           >
             <svg
               viewBox="0 0 24 24"
@@ -18,7 +21,7 @@ export default function MoreDisclosureButton({ title, path }) {
               data-testid="accordion-chevron"
               width={18.75}
               height={18.75}
-              fill={open ? "#1d9bf0" : "#e7e9ea"}
+              fill="currentColor"
             >
               <path d={path} />
             </svg>

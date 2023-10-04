@@ -25,11 +25,11 @@ export default function Search() {
 
   return (
     <div
-      className="w-full h-[53px] mb-3 flex items-center sticky top-0 bg-black z-10"
+      className="w-full h-[53px] mb-3 flex items-center sticky top-0 bg-[var(background-primary)] z-10"
       ref={container}
     >
       <div className="relative w-full" onClick={() => setShowPopup(true)}>
-        <label className="text-[#71767b] w-full rounded-full border border-[#202327] bg-[#202327] flex items-center text-[15px] leading-5 group focus-within:border-[#1d9bf0] focus-within:text-[#1d9bf0] focus-within:bg-black">
+        <label className="text-[var(--color-baseSecondary)] w-full rounded-full border border-[var(--background-third)] bg-[var(--background-third)] flex items-center text-[15px] leading-5 group focus-within:border-[#1d9bf0] focus-within:text-[#1d9bf0] focus-within:bg-[var(--background-primary)]">
           <div className="pointer-events-none">
             <svg
               className="pl-3"
@@ -44,7 +44,7 @@ export default function Search() {
           </div>
           <input
             type="text"
-            className="p-3 bg-transparent placeholder:text-[#71767b] w-full border-none outline-none text-[#e7e9ea]"
+            className="p-3 bg-transparent placeholder:text-[var(--color-baseSecondary)] w-full border-none outline-none "
             placeholder="Search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
@@ -52,7 +52,7 @@ export default function Search() {
           {query && (
             <div className=" mr-3 flex items-center">
               <button
-                className="w-[22px] h-[22px] rounded-full bg-[#1d9bf0] flex justify-center items-center text-black transition-colors hover:bg-[#1a8cd8] invisible group-focus-within:visible"
+                className="w-[22px] h-[22px] rounded-full bg-[var(--color-primary)] flex justify-center items-center text-[var(--background-primary)] transition-colors hover:bg-[#1a8cd8] invisible group-focus-within:visible"
                 onClick={() => setQuery("")}
               >
                 <svg

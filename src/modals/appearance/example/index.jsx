@@ -1,7 +1,7 @@
 export default function Example() {
   return (
-    <div className="px-4 py-3 mx-8 mb-4 rounded-2xl border border-[#2f3336] flex gap-3">
-      <div className="relative w-[40px] h-[40px] min-w-[40px] min-h-[40px]">
+    <div className="px-4 py-3 mx-8 mb-4 rounded-2xl border border-[var(--background-third)] flex gap-3">
+      <div className="relative w-[40px] h-[40px] min-w-[40px] min-h-[40px] rounded-full overflow-hidden">
         <img
           alt=""
           className="absolute w-full h-full object-cover"
@@ -9,10 +9,10 @@ export default function Example() {
           src="https://pbs.twimg.com/profile_images/1683899100922511378/5lY42eHs_normal.jpg"
         />
       </div>
-      <div className="flex gap-0.5 flex-col">
+      <div className="flex flex-col gap-0.5">
         <div className="flex gap-1 h-max">
-          <div className="flex gap-0.5">
-            <span className="text-[#e7e9ea] text-[15px] font-bold">X</span>
+          <div className="flex gap-0.5 items-center">
+            <span className=" text-[15px] font-bold leading-5">X</span>
             <div className="text-[#1d9bf0]">
               <svg
                 viewBox="0 0 22 22"
@@ -28,15 +28,13 @@ export default function Example() {
             </div>
           </div>
 
-          <div className="flex items-center text-[#71767b] text-[15px]">
-            <span>@X</span>
-            <span className="px-1">.</span>
-            <span>2h</span>
+          <div className="text-[var(--color-baseSecondary)] text-[15px] leading-5">
+            <span>@X · 2h</span>
           </div>
         </div>
 
         <div className="leading-5 text-[15px]">
-          <span className="text-[#e7e9ea]">
+          <span className=" leading-5">
             At the heart of X are short messages called posts — just like this
             one — which can include photos, videos, links, text, hashtags, and
             mentions like

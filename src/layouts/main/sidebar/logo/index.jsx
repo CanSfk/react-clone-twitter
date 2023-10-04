@@ -5,13 +5,13 @@ export default function Logo() {
     <div className="w-[52px] h-[56px] grid place-items-center py-0.5">
       <Link
         to="/"
-        className="grid place-items-center w-[52px] h-[52px] rounded-full transition-colors outline-none hover:bg-[#e7e9ea]/10"
+        className="grid place-items-center w-[52px] h-[52px] rounded-full transition-colors outline-none hover:bg-[var(--color-base)]/10"
       >
-        <div className="w-[50px] h-[50px] grid place-items-center">
+        <div className="w-[50px] h-[50px] grid place-items-center ">
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
-            fill="#e7e9ea"
+            fill="currentColor"
             width="50"
             height="30"
           >

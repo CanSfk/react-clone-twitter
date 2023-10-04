@@ -4,9 +4,9 @@ import { Trends } from "../../../../utils/consts";
 
 export default function Trend() {
   return (
-    <div className="flex border border-transparent bg-[#16181c] rounded-2xl mb-4">
+    <div className="flex border border-transparent bg-[var(--background-secondary)] rounded-2xl mb-4">
       <section className="flex flex-1 flex-col">
-        <div className="py-3 px-4 text-[#e7e9ea]">
+        <div className="py-3 px-4 ">
           <h2 className="text-[20px] font-extrabold leading-6 ">
             Trends for you
           </h2>
