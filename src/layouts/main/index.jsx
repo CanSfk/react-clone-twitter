@@ -54,10 +54,17 @@ export default function MainLayout() {
     console.log(appearance.backgroundColor.primary);
   }, [appearance]);
 
+  useEffect(() => {
+    if (modal) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "auto";
+  }, [modal]);
+
   return (
     <>
-      {modal && <Modal />}
-      <div className={`w-[1265px] text-[var(--color-base)] mx-auto flex`}>
+      <div
+        className={`w-[1265px] text-[var(--color-base)] mx-auto flex hiddenScroll`}
+      >
+        {modal && <Modal />}
         <Sidebar />
         <div className="flex-1 flex justify-between">
           <main className="flex-1 border border-[var(--background-third)] max-w-[600px]">

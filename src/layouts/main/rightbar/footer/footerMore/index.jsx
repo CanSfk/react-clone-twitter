@@ -30,7 +30,7 @@ export default function FooterMore() {
         <div>
           <span>More</span>
         </div>
-        <div className="text-[var(--color-baseSecondary)] px-0.5 items-end mt-auto">
+        <div className="px-0.5 items-end mt-auto">
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"

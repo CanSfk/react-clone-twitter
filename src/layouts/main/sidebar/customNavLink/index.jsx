@@ -28,7 +28,7 @@ export const CustomNavLink = ({
               {isActive && <path d={activePath} />}
             </svg>
             {customCircle && (
-              <div className="absolute -top-1 right-[1px] rounded-full h-[7px] w-[7px] bg-[#1d9bf0]"></div>
+              <div className="absolute -top-1 right-[1px] rounded-full h-[7px] w-[7px] bg-[var(--color-primary)]"></div>
             )}
             {notification && (
               <span className="absolute w-[18px] h-[18px] -top-[6px] -right-1 rounded-full bg-[#1d9bf0] text-[11px] text-center">

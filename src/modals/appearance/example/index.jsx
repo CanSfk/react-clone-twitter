@@ -39,7 +39,7 @@ export default function Example() {
             one — which can include photos, videos, links, text, hashtags, and
             mentions like
           </span>
-          <span className="text-[#1d9bf0]"> @X</span>
+          <span className="text-[var(--color-primary)]"> @X</span>
           <span>.</span>
         </div>
       </div>

@@ -2,50 +2,23 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     backgroundColor: {
+        name: "Lights out",
         primary: "#000",
         secondary: "#16181c",
         third: "#202327"
     },
     color: {
-        primary: "#1a8cd8",
-        secondary: "#8ecdf8",
+        name: "blue",
+        primary: "rgb(29,155,240)",
+        secondary: "rgb(26, 140, 216)",
         base: "#e7e9ea",
-        baseSecondary: "#71767b",
+        baseSecondary: "#71767b"
     },
     boxShadow: {
         shadow: "rgba(255, 255, 255, 0.2) 0px 0px 15px, rgba(255, 255, 255, 0.15) 0px 0px 3px 1px",
     },
 
     fontSize: 15
-
-    // backgroundColor: {
-    //     primary: "#15202b",
-    //     secondary: "#1e2732",
-    //     third: "#273340"
-    // },
-    // color: {
-    //     primary: "#1d9bf0",
-    //     secondary: "#8ecdf8",
-    //     base: "#f7f9f9",
-    //     baseSecondary: "#8b98a5",
-    // },
-    // fontSize: 15
-
-    // backgroundColor: {
-    //     primary: "#ffffff",
-    //     secondary: "#f7f9f9",
-    //     third: "#eff3f4"
-    // },
-    // color: {
-    //     primary: "#1d9bf0",
-    //     secondary: "#8ecdf8",
-    //     base: "#0f1419",
-    //     baseSecondary: "#536471",
-    // },
-    // boxShadow: {
-    //     shadow: "rgba(101, 119, 134, 0.2) 0px 0px 15px, rgba(101, 119, 134, 0.15) 0px 0px 3px 1px",
-    // },
-    // fontSize: 15
 }
 
 const appearance = createSlice({

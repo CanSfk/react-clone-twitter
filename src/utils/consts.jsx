@@ -231,3 +231,48 @@ export const FooterMoreLinks = [
     to: "/",
   },
 ];
+
+export const Colors = [
+  {
+    name: "blue",
+    primary: "rgb(29,155,240)",
+    secondary: "rgb(26, 140, 216)",
+    optionBackground: "bg-[rgb(29,155,240)]",
+    optionBackgroundHover: "hover:bg-[rgba(29,155,240,0.1)]",
+  },
+  {
+    name: "yellow",
+    primary: "rgb(255,212,0)",
+    secondary: "rgb(230, 191, 0)",
+    optionBackground: "bg-[rgb(255,212,0)]",
+    optionBackgroundHover: "hover:bg-[rgba(255,212,0,0.1)]",
+  },
+  {
+    name: "pink",
+    primary: "rgb(249,24,128)",
+    secondary: "rgb(224, 22, 115)",
+    optionBackground: "bg-[rgb(249,24,128)]",
+    optionBackgroundHover: "hover:bg-[rgba(249,24,128,0.1)]",
+  },
+  {
+    name: "purple",
+    primary: "rgb(120,86,255)",
+    secondary: "rgb(108, 77, 230)",
+    optionBackground: "bg-[rgb(120,86,255)]",
+    optionBackgroundHover: "hover:bg-[rgba(120,86,255,0.1)]",
+  },
+  {
+    name: "orange",
+    primary: "rgb(255,122,0)",
+    secondary: "rgb(230, 191, 0)",
+    optionBackground: "bg-[rgb(255,122,0)]",
+    optionBackgroundHover: "hover:bg-[rgba(255,122,0,0.1)]",
+  },
+  {
+    name: "green",
+    primary: "rgb(0,186,124)",
+    secondary: "rgb(230, 191, 0)",
+    optionBackground: "bg-[rgb(0,186,124)]",
+    optionBackgroundHover: "hover:bg-[rgba(0,186,124,0.1)]",
+  },
+];
