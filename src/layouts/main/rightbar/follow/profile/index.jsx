@@ -21,7 +21,7 @@ export default function Profile({
         />
       </div>
       <div className="flex justify-between flex-1 items-center">
-        <div className="text-[15px] leading-5">
+        <div className="text-base ">
           <div className="flex flex-1 items-center mb-[2.25px]">
             <span className=" font-bold hover:decoration-slice">
               {name}

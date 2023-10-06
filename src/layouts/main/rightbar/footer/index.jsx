@@ -4,7 +4,7 @@ import FooterMore from "./footerMore";
 
 export default function Footer() {
   return (
-    <footer className="px-4 flex flex-wrap text-[var(--color-baseSecondary)] mb-4 text-[13px] leading-4">
+    <footer className="px-4 flex flex-wrap text-[var(--color-baseSecondary)] mb-4 text-sm ">
       {Footers.map((footer, index) => {
         return <FooterLink title={footer.title} to={footer.to} key={index} />;
       })}

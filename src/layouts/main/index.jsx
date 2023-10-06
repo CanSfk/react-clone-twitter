@@ -16,6 +16,10 @@ export default function MainLayout() {
       appearance.backgroundColor.primary
     );
     document.documentElement.style.setProperty(
+      "--background-primary-soft",
+      appearance.backgroundColor.primarySoft
+    );
+    document.documentElement.style.setProperty(
       "--background-secondary",
       appearance.backgroundColor.secondary
     );
@@ -47,11 +51,44 @@ export default function MainLayout() {
     );
 
     document.documentElement.style.setProperty(
-      "--font-size",
-      appearance.fontSize
+      "--font-sm",
+      appearance.fontSize.sm
     );
 
-    console.log(appearance.backgroundColor.primary);
+    document.documentElement.style.setProperty(
+      "--font-smLineHeight",
+      appearance.fontSize.smLineHeight
+    );
+
+    document.documentElement.style.setProperty(
+      "--font-base",
+      appearance.fontSize.base
+    );
+
+    document.documentElement.style.setProperty(
+      "--font-baseLineHeight",
+      appearance.fontSize.baseLineHeight
+    );
+
+    document.documentElement.style.setProperty(
+      "--font-xlLineHeight",
+      appearance.fontSize.xlLineHeight
+    );
+
+    document.documentElement.style.setProperty(
+      "--font-xl",
+      appearance.fontSize.xl
+    );
+
+    document.documentElement.style.setProperty(
+      "--font-xxl",
+      appearance.fontSize.xxl
+    );
+
+    document.documentElement.style.setProperty(
+      "--font-xxlLineHeight",
+      appearance.fontSize.xxlLineHeight
+    );
   }, [appearance]);
 
   useEffect(() => {

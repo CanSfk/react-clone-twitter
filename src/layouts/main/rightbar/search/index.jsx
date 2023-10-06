@@ -29,7 +29,7 @@ export default function Search() {
       ref={container}
     >
       <div className="relative w-full" onClick={() => setShowPopup(true)}>
-        <label className="text-[var(--color-baseSecondary)] w-full rounded-full border border-[var(--background-third)] bg-[var(--background-third)] flex items-center text-[15px] leading-5 group focus-within:border-[#1d9bf0] focus-within:text-[#1d9bf0] focus-within:bg-[var(--background-primary)]">
+        <label className="text-[var(--color-baseSecondary)] w-full rounded-full border border-[var(--background-third)] bg-[var(--background-third)] flex items-center text-base  group focus-within:border-[#1d9bf0] focus-within:text-[var(--color-primary)] focus-within:bg-[var(--background-primary)]">
           <div className="pointer-events-none">
             <svg
               className="pl-3"

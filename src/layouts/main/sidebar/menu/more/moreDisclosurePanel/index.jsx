@@ -17,7 +17,7 @@ export default function MoreDisclosurePanel({ to, path, title }) {
             <path d={path} />
           </svg>
         </div>
-        <span className="text-[15px] font-medium">{title}</span>
+        <span className="text-base font-medium">{title}</span>
       </Link>
     </Disclosure.Panel>
   );

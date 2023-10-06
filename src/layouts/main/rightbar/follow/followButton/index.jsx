@@ -7,7 +7,7 @@ export default function FollowButton({ longName }) {
   const [popup, setPopop] = useState(false);
 
   const buttonClasses = [
-    "px-4 h-8 rounded-full text-[14px] border font-bold leading-4 transition-colors group",
+    "px-4 h-8 rounded-full text-[14px] border font-bold  transition-colors group",
     styleState
       ? "border-[#536471] bg-transparent hover:!border-[#67070f] hover:!bg-[#f4212e1a] hover:!text-[#F4212E] text-[#eff3f4]"
       : "text-black bg-[#eff3f4] border-transparent hover:bg-[#D7DBDC]",
@@ -50,19 +50,19 @@ export default function FollowButton({ longName }) {
           <div className="w-[320px] p-8 flex flex-col gap-6 bg-[var(--background-primary)] rounded-2xl">
             <div className="flex flex-col">
               <div className="mb-2 flex">
-                <h1 className="font-bold text-[20px]  leading-6">
+                <h1 className="font-bold text-xl  ">
                   Unfollow @{longName}?
                 </h1>
               </div>
               <div className="flex">
-                <span className="text-[var(--color-baseSecondary)] text-[15px] leading-5">
+                <span className="text-[var(--color-baseSecondary)] text-base ">
                   Their posts will no longer show up in your For You timeline.
                   You can still view their profile, unless their posts are
                   protected.
                 </span>
               </div>
             </div>
-            <div className="flex flex-col gap-3 text-[15px] font-bold leading-5">
+            <div className="flex flex-col gap-3 text-base font-bold ">
               <div className="flex">
                 <button
                   onClick={() => {

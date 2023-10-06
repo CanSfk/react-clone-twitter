@@ -4,7 +4,7 @@ import AccountPopoverPanel from "./accountPopoverPanel";
 
 export default function AccountList() {
   return (
-    <div className="py-3 text-[15px] leading-5 ">
+    <div className="py-3 text-base  ">
       <Popover className="relative">
         <AccountPopoverButton />
         <AccountPopoverPanel />

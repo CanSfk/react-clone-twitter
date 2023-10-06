@@ -12,7 +12,7 @@ export default function Example() {
       <div className="flex flex-col gap-0.5">
         <div className="flex gap-1 h-max">
           <div className="flex gap-0.5 items-center">
-            <span className=" text-[15px] font-bold leading-5">X</span>
+            <span className=" text-base font-bold ">X</span>
             <div className="text-[#1d9bf0]">
               <svg
                 viewBox="0 0 22 22"
@@ -28,13 +28,13 @@ export default function Example() {
             </div>
           </div>
 
-          <div className="text-[var(--color-baseSecondary)] text-[15px] leading-5">
+          <div className="text-[var(--color-baseSecondary)] text-base ">
             <span>@X · 2h</span>
           </div>
         </div>
 
-        <div className="leading-5 text-[15px]">
-          <span className=" leading-5">
+        <div className=" text-base">
+          <span className=" ">
             At the heart of X are short messages called posts — just like this
             one — which can include photos, videos, links, text, hashtags, and
             mentions like

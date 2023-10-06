@@ -276,3 +276,81 @@ export const Colors = [
     optionBackgroundHover: "hover:bg-[rgba(0,186,124,0.1)]",
   },
 ];
+
+export const FontSizes = [
+  {
+    name: "extraSmall",
+
+    sm: "12px",
+    smLineHeight: "14px",
+
+    base: "14px",
+    baseLineHeight: "18px",
+
+    xl: "18px",
+    xlLineHeight: "22px",
+
+    xxl: "21px",
+    xxlLineHeight: "25px",
+  },
+  {
+    name: "small",
+
+    sm: "12px",
+    smLineHeight: "15px",
+
+    base: "14px",
+    baseLineHeight: "19px",
+
+    xl: "19px",
+    xlLineHeight: "23px",
+
+    xxl: "22px",
+    xxlLineHeight: "27px",
+  },
+  {
+    name: "default",
+
+    sm: "13px",
+    smLineHeight: "16px",
+
+    base: "15px",
+    baseLineHeight: "20px",
+
+    xl: "20px",
+    xlLineHeight: "24px",
+
+    xxl: "23px",
+    xxlLineHeight: "28px",
+  },
+  {
+    name: "large",
+
+    sm: "14px",
+    smLineHeight: "18px",
+
+    base: "17px",
+    baseLineHeight: "22px",
+
+    xl: "22px",
+    xlLineHeight: "26px",
+
+    xxl: "25px",
+    xxlLineHeight: "31px",
+  },
+  {
+    name: "extraLarge",
+
+    sm: "16px",
+    smLineHeight: "19px",
+
+    base: "18px",
+    baseLineHeight: "24px",
+
+    xl: "24px",
+    xlLineHeight: "29px",
+
+    xxl: "28px",
+    xxlLineHeight: "34px",
+  },
+];

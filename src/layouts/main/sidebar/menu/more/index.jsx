@@ -42,7 +42,7 @@ export default function More() {
 
             <div className="bg-[var(--background-third)] w-[89%] h-[1px] mx-auto my-0.5"></div>
 
-            <div className="grid leading-5 text-[15px] ">
+            <div className="grid  text-base ">
               <Disclosure>
                 <div className="flex-1">
                   <MoreDisclosureButton

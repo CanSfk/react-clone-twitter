@@ -32,7 +32,7 @@ export default function TrendLinkPopover() {
               </svg>
             </div>
             <div className="flex">
-              <span className="text-[15px] font-bold leading-5">
+              <span className="text-base font-bold ">
                 Not interested in this
               </span>
             </div>
@@ -50,7 +50,7 @@ export default function TrendLinkPopover() {
               </svg>
             </div>
             <div className="flex">
-              <span className="text-[15px] font-bold leading-5">
+              <span className="text-base font-bold ">
                 This trend is harmful or spammy
               </span>
             </div>

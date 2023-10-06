@@ -9,15 +9,16 @@ export default function Background() {
 
   return (
     <div className="flex flex-col gap-1">
-      <span className="text-[13px] font-bold leading-5 text-[var(--color-baseSecondary)]">
+      <span className="text-sm font-bold py-0.5 text-[var(--color-baseSecondary)]">
         Background
       </span>
-      <div className="w-full bg-[var(--background-secondary)] rounded-2xl mb-3 flex px-3 py-1 font-bold text-[15px] leading-5">
+      <div className="w-full bg-[var(--background-secondary)] rounded-2xl mb-3 flex px-3 py-1 font-bold text-base ">
         <button
           onClick={() => {
             setBackgroundColor({
               name: "Default",
               primary: "#ffffff",
+              primarySoft: "#ffffffa6",
               secondary: "#f7f9f9",
               third: "#eff3f4",
             });
@@ -67,6 +68,7 @@ export default function Background() {
             setBackgroundColor({
               name: "Dim",
               primary: "#15202b",
+              primarySoft: "#15202ba6",
               secondary: "#1e2732",
               third: "#273340",
             });
@@ -116,6 +118,7 @@ export default function Background() {
             setBackgroundColor({
               name: "Lights out",
               primary: "#000",
+              primarySoft: "#000000a6",
               secondary: "#16181c",
               third: "#202327",
             });

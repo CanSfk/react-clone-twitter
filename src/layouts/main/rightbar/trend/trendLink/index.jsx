@@ -6,18 +6,18 @@ export default function TrendLink({ to, title, userName, posts }) {
     <Link to={to} className="hover:bg-[#ffffff08] transition-colors">
       <div className="flex px-4 py-3 flex-col items-stretch">
         <div className="flex relative justify-between">
-            <span className="text-[13px] text-[var(--color-baseSecondary)] leading-4 inline">
+            <span className="text-sm text-[var(--color-baseSecondary)]  inline">
               {title}
             </span>
           <TrendLinkPopover />
         </div>
-        <div className="flex mt-[2px] leading-5">
-          <span className=" text-[15px] font-bold">
+        <div className="flex mt-[2px] ">
+          <span className=" text-base font-bold">
             {userName}
           </span>
         </div>
         <div className="flex mt-1">
-          <span className="text-[13px] text-[var(--color-baseSecondary)] leading-4">
+          <span className="text-sm text-[var(--color-baseSecondary)] ">
             {posts} posts
           </span>
         </div>

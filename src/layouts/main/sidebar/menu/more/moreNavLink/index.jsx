@@ -19,7 +19,7 @@ export default function MoreNavLink({ to, path, text }) {
         </svg>
       </div>
       <div className="flex-1 h-6 flex items-center">
-        <span className="font-bold text-[20px] ">{text}</span>
+        <span className="font-bold text-xl ">{text}</span>
       </div>
     </Link>
   );

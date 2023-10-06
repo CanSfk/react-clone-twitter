@@ -6,7 +6,7 @@ export default function Follow() {
   return (
     <div className="flex flex-col bg-[var(--background-secondary)] rounded-2xl border border-[var(--background-secondary)] mb-4">
       <div className="px-4 py-3 flex ">
-        <span className="leading-6 text-[20px] font-extrabold">
+        <span className=" text-xl font-extrabold">
           Who to follow
         </span>
       </div>
@@ -25,7 +25,7 @@ export default function Follow() {
       </div>
       <Link to="to" className="p-4 transition-colors hover:bg-[#ffffff08] flex">
         <div className="flex">
-          <span className="text-[#1d9bf0] text-[15px] leading-5">
+          <span className="text-[var(--color-primary)] text-base ">
             Show more
           </span>
         </div>

@@ -4,6 +4,7 @@ const initialState = {
     backgroundColor: {
         name: "Lights out",
         primary: "#000",
+        primarySoft: "#000000a6",
         secondary: "#16181c",
         third: "#202327"
     },
@@ -18,7 +19,21 @@ const initialState = {
         shadow: "rgba(255, 255, 255, 0.2) 0px 0px 15px, rgba(255, 255, 255, 0.15) 0px 0px 3px 1px",
     },
 
-    fontSize: 15
+    fontSize: {
+        name: 'default',
+
+        sm: '13px',
+        smLineHeight: '16px',
+
+        base: '15px',
+        baseLineHeight: '20px',
+
+        xl: '20px',
+        xlLineHeight: '24px',
+
+        xxl: '23px',
+        xxlLineHeight: '28px',
+    }
 }
 
 const appearance = createSlice({
