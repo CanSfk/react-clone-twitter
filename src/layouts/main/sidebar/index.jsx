@@ -5,7 +5,7 @@ import AccountList from "./accountList";
 
 export default function Sidebar() {
   return (
-    <div className="w-[275px] flex flex-col relative">
+    <div className="w-[275px] flex flex-col relative z-40">
       <div className="px-2 min-h-screen fixed w-[275px] flex flex-col justify-between">
         <aside className="flex flex-col ">
           <Logo />

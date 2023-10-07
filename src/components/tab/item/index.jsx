@@ -8,9 +8,9 @@ export default function Item({ children, id }) {
   return (
     <button
       onClick={() => setActive(id)}
-      className="px-4 h-[3.313rem] text-base text-center flex-1 inline-flex items-center justify-center transition-colors hover:bg-[var(--background-secondary)]"
+      className="px-4 h-[3.313rem] text-base text-center flex-auto inline-flex items-center justify-center transition-colors hover:bg-[var(--background-secondary)]"
     >
-      <div className="relative h-full grid place-items-center">
+      <div className="relative h-full grid place-items-center px-[1.5px]">
         <span
           className={classNames("", {
             "font-medium text-[var(--color-baseSecondary)]": active != id,

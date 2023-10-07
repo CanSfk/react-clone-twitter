@@ -6,7 +6,7 @@ export default function Menu() {
   return (
     <div className="flex flex-col items-stretch mt-0.5 mb-1">
       <nav className="flex flex-col items-start">
-       {MainMenu.map((menu, index) => {
+        {MainMenu.map((menu, index) => {
           return (
             <CustomNavLink
               to={menu.path}
@@ -19,7 +19,7 @@ export default function Menu() {
             />
           );
         })}
-        <More /> 
+        <More />
       </nav>
     </div>
   );

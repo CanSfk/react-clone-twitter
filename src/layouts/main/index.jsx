@@ -104,7 +104,7 @@ export default function MainLayout() {
         {modal && <Modal />}
         <Sidebar />
         <div className="flex-1 flex justify-between">
-          <main className="flex-1 border border-[var(--background-third)] max-w-[600px]">
+          <main className="flex-1 border-r border-l border-[var(--background-third)] max-w-[600px]">
             <Outlet />
           </main>
           <Rightbar />

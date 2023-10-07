@@ -354,3 +354,128 @@ export const FontSizes = [
     xxlLineHeight: "34px",
   },
 ];
+
+export const Posts = [
+  {
+    id: 1,
+    content:
+      "Bugün Rus Devlet Televizyonuna röportaj verdim. Azcık sert konuşmuş olabilirim, Putin reyiz kızmaz inşallah 🤤😬",
+    account: {
+      fullName: "Oğuzhan Uğur",
+      userName: "@OguzhanUgur",
+      avatar:
+        "https://pbs.twimg.com/profile_images/1697520549184827392/Hj7xPCBO_200x200.jpg",
+    },
+
+    stats: {
+      comments: "1389",
+      repost: "15.9K",
+      like: "268.5K",
+      view: "4.5M",
+    },
+
+    image: "https://pbs.twimg.com/media/FxjRMGgXwAUcBo7?format=jpg",
+    premium: true,
+  },
+  {
+    id: 2,
+    content:
+      "Hayatımın bir yerinde risk almam lazımdı ve o riski aldım ama yanlış yerinde yanlış taktikle",
+    account: {
+      fullName: "Serdar",
+      userName: "@Sersol07",
+      avatar:
+        "https://pbs.twimg.com/profile_images/1658029401223704576/yWaQlY5N_normal.jpg",
+    },
+
+    stats: {
+      comments: "54",
+      repost: "71",
+      like: "12K",
+      view: "824.1K",
+    },
+
+    image: "https://pbs.twimg.com/media/F7wxCsyW4AAJQ46?format=jpg",
+  },
+  {
+    id: 3,
+    content:
+      "Hamas'ın vahşetini eleştirmek, Filistinlilerin acılarını yok saymak değildir. Aksine, Hamas aklı başında bir oluşum olsaydı, Filistinlilere daha çok acı verecek bir İsrail saldırısını doğurmak dışında sonuca hizmet etmeyen çatışmaya yol açmazdı.\n Bunu anlamak zor olmamalı.",
+    account: {
+      fullName: "Con Sinov",
+      userName: "@lordsinov",
+      avatar:
+        "https://pbs.twimg.com/profile_images/1660541132592259075/N1qz5Y4E_normal.jpg",
+    },
+
+    stats: {
+      comments: "136",
+      repost: "376",
+      like: "4.634",
+      view: "226.8K",
+    },
+
+    premium: true,
+  },
+  {
+    id: 4,
+    content: "Name this cat",
+    account: {
+      fullName: "Why you should have a cat",
+      userName: "@ShouldHaveCat",
+      avatar:
+        "https://pbs.twimg.com/profile_images/1365068242918780928/m278bxAZ_normal.jpg",
+    },
+
+    stats: {
+      comments: "3.731",
+      repost: "6.501",
+      like: "93.5K",
+      view: "5.4M",
+    },
+
+    image: "https://pbs.twimg.com/media/F7wXJeKWEAADE_M?format=jpg",
+  },
+  {
+    id: 5,
+    content:
+      "İsrail Başbakanı Netanyahu: \n'Hamas benzeri görülmemiş bir bedel ödeyecek.'",
+    account: {
+      fullName: "BPT",
+      userName: "@bpthaber",
+      avatar:
+        "https://pbs.twimg.com/profile_images/1347941491889549318/uvn8isXg_normal.jpg",
+    },
+
+    stats: {
+      comments: "832",
+      repost: "713",
+      like: "11K",
+      view: "1.5M",
+    },
+
+    image: "https://pbs.twimg.com/media/F70wNHHX0AEgDi_?format=jpg",
+    premium: true,
+  },
+  {
+    id: 6,
+    content:
+      "Başrolü Haluk Bilginer'e Emmy Ödülü kazandıran Şahsiyet, 5 yıl aradan sonra ikinci sezonuyla geri dönüyor.",
+    account: {
+      fullName: "DarkWeb Haber",
+      userName: "@Darkwebhaber",
+      avatar:
+        "https://pbs.twimg.com/profile_images/1707827931895017472/1-bUbTT3_normal.jpg",
+    },
+
+    stats: {
+      comments: "832",
+      repost: "713",
+      like: "11K",
+      view: "1.5M",
+    },
+
+    image: "https://pbs.twimg.com/media/F71JI3nXwAAcz46?format=jpg",
+    premium: true,
+  },
+];

@@ -16,8 +16,6 @@ export default function Tab({ children, activeTab }) {
   const contents = children.filter((c) => c.type === Content);
   const stickyHeader = children.filter((c) => c.type === StickyHeader);
 
-  const items = stickyHeader[0];
-
   const content = contents.find((c) => c.props.id === active);
 
   const data = {
@@ -27,7 +25,7 @@ export default function Tab({ children, activeTab }) {
 
   return (
     <TabContext.Provider value={data}>
-      {items}
+      {stickyHeader}
       {content}
     </TabContext.Provider>
   );

@@ -26,7 +26,7 @@ export default function More() {
         </div>
       </Popover.Button>
 
-      <Popover.Panel className="absolute z-10 -top-[214.75px] left-0 rounded-xl w-[318px] bg-[var(--background-primary)] shadow-box">
+      <Popover.Panel className="absolute -top-[214.75px] left-0 rounded-xl w-[318px] bg-[var(--background-primary)] shadow-box">
         {({ close }) => (
           <>
             <MoreNavLink
