@@ -22,10 +22,8 @@ export default function Profile({
       </div>
       <div className="flex justify-between flex-1 items-center">
         <div className="text-base ">
-          <div className="flex flex-1 items-center mb-[2.25px]">
-            <span className=" font-bold hover:decoration-slice">
-              {name}
-            </span>
+          <div className="flex flex-1 items-center mb-[2.25px] hover:underline">
+            <span className=" font-bold">{name}</span>
             <div className="ml-0.5">
               <svg
                 viewBox="0 0 22 22"

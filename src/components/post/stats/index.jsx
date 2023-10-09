@@ -1,3 +1,6 @@
+import More from "../../more";
+import MoreContent from "../../more/moreContent";
+
 export default function Stats({ post }) {
   return (
     <div className="flex items-center justify-between">
@@ -18,23 +21,22 @@ export default function Stats({ post }) {
           <span>{post.stats.comments}</span>
         </div>
       </button>
-      <button>
-        <div className="text-[var(--color-baseSecondary)] text-sm flex items-center gap-2 transition-colors group hover:text-[rgb(0,186,124)]">
-          <div className="relative">
-            <div className="absolute rounded-full top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[34.75px] h-[34.75px] transition-colors group-hover:bg-[rgba(0,186,124,0.1)]" />
-            <svg
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              width={18.75}
-              height={18.75}
-              fill="currentColor"
-            >
-              <path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z" />
-            </svg>
-          </div>
-          <span>{post.stats.repost}</span>
-        </div>
-      </button>
+
+      <More
+        title={post.stats.repost}
+        color="green"
+        path="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"
+      >
+        <MoreContent
+          title="Repost"
+          path="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"
+        />
+        <MoreContent
+          title="Quote"
+          path="M14.23 2.854c.98-.977 2.56-.977 3.54 0l3.38 3.378c.97.977.97 2.559 0 3.536L9.91 21H3v-6.914L14.23 2.854zm2.12 1.414c-.19-.195-.51-.195-.7 0L5 14.914V19h4.09L19.73 8.354c.2-.196.2-.512 0-.708l-3.38-3.378zM14.75 19l-2 2H21v-2h-6.25z"
+        />
+      </More>
+
       <button>
         <div className="text-[var(--color-baseSecondary)] text-sm flex items-center gap-2 transition-colors group hover:text-[rgb(249,24,128)]">
           <div className="relative">

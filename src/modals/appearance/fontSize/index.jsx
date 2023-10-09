@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import classNames from "classnames";
 
 export default function FontSize() {
-  const [count, setCount] = useState();
+  const [count, setCount] = useState(2);
   const [width, setWidth] = useState("0%");
 
   const setValue = (index) => {

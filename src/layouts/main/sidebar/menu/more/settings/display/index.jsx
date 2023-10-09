@@ -1,12 +1,15 @@
 import { Disclosure } from "@headlessui/react";
 import { setModal } from "../../../../../../../store/modal/actions";
 
-export default function Display() {
+export default function Display({ close }) {
   return (
     <>
       <Disclosure.Panel className="flex-1 w-full transition-colors hover:bg-[var(--background-secondary)]">
         <button
-          onClick={() => setModal("appearance")}
+          onClick={() => {
+            setModal("appearance");
+            if (open) close();
+          }}
           className="flex items-center flex-1 w-full p-3 transition-colors hover:bg-[var(--background-secondary)]"
         >
           <div className="mr-3 ">

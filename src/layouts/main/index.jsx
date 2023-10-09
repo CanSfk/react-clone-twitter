@@ -98,9 +98,7 @@ export default function MainLayout() {
 
   return (
     <>
-      <div
-        className={`w-[1265px] text-[var(--color-base)] mx-auto flex hiddenScroll`}
-      >
+      <div className={`w-[1265px] text-[var(--color-base)] flex mx-auto`}>
         {modal && <Modal />}
         <Sidebar />
         <div className="flex-1 flex justify-between">
@@ -110,6 +108,7 @@ export default function MainLayout() {
           <Rightbar />
         </div>
       </div>
+      {modal && <div className="min-h-full w-4" />}
     </>
   );
 }

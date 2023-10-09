@@ -6,12 +6,14 @@ import Footer from "./footer";
 
 export default function Rightbar() {
   return (
-    <div className="w-[350px] mr-2.5 pb-[75px]">
+    <div className="w-[350px] mr-2.5 pb-[65px]">
       <Search />
-      <Premium />
-      <Trend />
-      <Follow />
-      <Footer />
+      <div>
+        <Premium />
+        <Trend />
+        <Follow />
+        <Footer />
+      </div>
     </div>
   );
 }
