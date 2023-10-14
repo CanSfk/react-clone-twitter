@@ -14,7 +14,7 @@ export default function Premium() {
         </div>
         <div className="">
           <Button size="normal">
-            <span className="text-white">Subscribe</span>
+            <span>Subscribe</span>
           </Button>
         </div>
       </div>

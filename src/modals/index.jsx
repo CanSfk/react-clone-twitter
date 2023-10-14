@@ -12,7 +12,7 @@ export default function Modal() {
       <div
         className="fixed top-0 left-0 right-0 bottom-0 bg-[#5b708366] z-40"
         onClick={removeModal}
-      ></div>
+      />
     </div>
   );
 }

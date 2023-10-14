@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import FollowButton from ".././followButton";
+import FollowPopover from "../followPopover";
 
 export default function Profile({
   name,
@@ -41,7 +42,7 @@ export default function Profile({
           <span className="text-[var(--color-baseSecondary)]">@{longName}</span>
         </div>
         <div className="ml-3">
-          <FollowButton longName={longName} />
+          <FollowPopover longName={longName} />
         </div>
       </div>
     </Link>

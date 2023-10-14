@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState, createContext } from "react";
+import { setModal } from "../../../../../store/modal/actions";
 
 export default function FollowButton({ longName }) {
   const [styleState, setStyleState] = useState(false);
   const [followState, setFollowState] = useState(false);
   const [text, setText] = useState("Follow");
-  const [popup, setPopop] = useState(false);
 
   const buttonClasses = [
     "px-4 h-8 rounded-full text-[14px] border font-bold  transition-colors group",
@@ -17,7 +17,10 @@ export default function FollowButton({ longName }) {
     if (!followState) {
       setText("Following");
       setFollowState(true);
-    } else setPopop(true);
+    } else
+      setModal("unfollow", {
+        longName: longName,
+      });
   };
 
   const handleButtonStyle = () => {
@@ -36,58 +39,16 @@ export default function FollowButton({ longName }) {
     <>
       <button
         className={buttonClasses}
-        onClick={() => handleText()}
+        onMouseEnter={handleMouseEnter}
         onMouseLeave={() => {
           handleButtonStyle();
           handleMouseLeave();
         }}
-        onMouseEnter={handleMouseEnter}
+        onClick={() => handleText()}
       >
         <span>{text}</span>
       </button>
-      {popup && (
-        <div className="fixed top-0 left-0 bottom-0 right-0 grid place-items-center bg-[#5b708366]">
-          <div className="w-[320px] p-8 flex flex-col gap-6 bg-[var(--background-primary)] rounded-2xl">
-            <div className="flex flex-col">
-              <div className="mb-2 flex">
-                <h1 className="font-bold text-xl  ">
-                  Unfollow @{longName}?
-                </h1>
-              </div>
-              <div className="flex">
-                <span className="text-[var(--color-baseSecondary)] text-base ">
-                  Their posts will no longer show up in your For You timeline.
-                  You can still view their profile, unless their posts are
-                  protected.
-                </span>
-              </div>
-            </div>
-            <div className="flex flex-col gap-3 text-base font-bold ">
-              <div className="flex">
-                <button
-                  onClick={() => {
-                    setFollowState(false);
-                    setStyleState(false);
-                    setText("Follow");
-                    setPopop(false);
-                  }}
-                  className="w-full px-4 h-11 rounded-full border transition-colors text-[#0f1419] bg-[#eff3f4] border-transparent hover:bg-[#D7DBDC]"
-                >
-                  Unfollow
-                </button>
-              </div>
-              <div className="flex">
-                <button
-                  onClick={() => setPopop(false)}
-                  className="w-full px-4 h-11 rounded-full border transition-colors border-[#536471] bg-transparent text-[#eff3f4] hover:bg-[#181919]"
-                >
-                  Cencel
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* <UnfollowModal /> */}
     </>
   );
 }

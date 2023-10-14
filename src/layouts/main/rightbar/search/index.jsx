@@ -44,7 +44,7 @@ export default function Search() {
           </div>
           <input
             type="text"
-            className="p-3 bg-transparent placeholder:text-[var(--color-baseSecondary)] w-full border-none outline-none "
+            className="p-3 bg-transparent placeholder:text-[var(--color-baseSecondary)] text-[var(--color-base)] w-full border-none outline-none "
             placeholder="Search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}

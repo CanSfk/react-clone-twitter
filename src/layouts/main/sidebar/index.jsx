@@ -10,8 +10,8 @@ export default function Sidebar() {
         <aside className="flex flex-col ">
           <Logo />
           <Menu />
-          <div className="my-4 flex items-stretch h-[52px] w-[90%]">
-            <Button size="large">Post</Button>
+          <div className="my-4 flex items-stretch w-[90%]">
+            <Button size="extraLarge">Post</Button>
           </div>
         </aside>
 

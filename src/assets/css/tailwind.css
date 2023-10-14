@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 body {
-    @apply bg-[var(--background-primary)] text-white;
+  @apply bg-[var(--background-primary)] text-white;
 }
 
 .shadow-box {
-    box-shadow: var(--boxShadow-shadow);
+  box-shadow: var(--boxShadow-shadow);
 }
 
 .img-shadow {
-    box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.03);
 }
 
 @layer components {
-    .dropShadow {
-        filter: drop-shadow(rgb(51, 54, 57) 1px -1px 1px);
-    }
+  .dropShadow {
+    filter: drop-shadow(rgb(51, 54, 57) 1px -1px 1px);
+  }
 }
